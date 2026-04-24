@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>A-Frame + MediaPipe Hands</title>
+
+  <!-- A-Frame -->
+  <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+
+  <!-- MediaPipe -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- 🔹 TELA INICIAL -->
+  <div id="startScreen">
+    <div class="menu">
+      <h2>Escolha o modo de processamento</h2>
+
+      <button onclick="startApp('cpu')">CPU</button>
+      <button onclick="startApp('gpu')">GPU</button>
+    </div>
+  </div>
+
+  <!-- Webcam -->
+  <video id="video" autoplay playsinline></video>
+
+  <!-- Canvas -->
+  <canvas id="canvas"></canvas>
+
+  <!-- UI -->
+  <div id="gestureBox">Gesto: ...</div>
+
+  <!-- A-Frame -->
+  <a-scene embedded>
+    <a-entity camera></a-entity>
+    <a-entity id="timer"
+      troika-text="value: Este texto está seguindo a linha de um círculo!; 
+                  fontSize: 0.2; 
+                  curveRadius: 2; 
+                  maxWidth: 10;
+                  align: center;"
+      position="0 1.5 -3">
+    </a-entity>
+  </a-scene>
+
+  <script src="app.js"></script>
+</body>
+</html>
