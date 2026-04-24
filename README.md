@@ -23,7 +23,6 @@ O projeto captura dados da webcam, detecta a mão do usuário e classifica gesto
 - Estrutura modular para adicionar novos gestos
 - Processamento em tempo real via webcam
 
-Projetos desse tipo normalmente utilizam modelos que detectam **21 pontos-chave da mão**, permitindo identificar posições e movimentos com precisão :contentReference[oaicite:0]{index=0}.
 
 ---
 
@@ -31,23 +30,21 @@ Projetos desse tipo normalmente utilizam modelos que detectam **21 pontos-chave 
 
 - JavaScript
 - MediaPipe 
-- A-Frame *(se aplicável)*
+- A-Frame 
 
 ---
 ## ▶️ Uso
-Permita acesso à webcam
-Posicione a mão na frente da câmera
-Execute gestos reconhecidos pelo sistema
-O nome do gesto será exibido na tela
+  Permita acesso à webcam
+  Posicione a mão na frente da câmera
+  Execute gestos reconhecidos pelo sistema
+  O nome do gesto será exibido na tela
 
-✋ Gestos suportados
+## ✋ Gestos suportados
 
-Exemplo (ajuste conforme seu projeto):
-
-✊ Punho fechado
-✋ Palma aberta
-👍 Positivo
-☝️ Apontando
+  - ✊ Punho fechado
+  - ✋ Palma aberta
+  - 👍 Positivo
+  - ☝️ Apontando
 
 ## Como funciona
   - Captura de vídeo via webcam
