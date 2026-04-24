@@ -7,7 +7,8 @@ O projeto captura dados da webcam, detecta a mão do usuário e classifica gesto
 
 ## 📸 Demonstração
 
-> 
+> <img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/6f21e4c9-6072-4abe-b686-a63b05d29aa9" />
+
 
 [demo](https://codepen.io/editor/Jonh-Lucas-Alves-da-Silva/pen/019db6ca-9bfd-772b-91f6-22f7f1447af5)
 
